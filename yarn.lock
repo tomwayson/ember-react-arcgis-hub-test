@@ -1823,6 +1823,10 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.5:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+
 clean-base-url@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/clean-base-url/-/clean-base-url-1.0.0.tgz#c901cf0a20b972435b0eccd52d056824a4351b7b"
@@ -2384,7 +2388,7 @@ ember-ajax@^3.0.0:
     ember-cli-babel "^6.16.0"
     najax "^1.0.3"
 
-ember-auto-import@^1.0.1:
+ember-auto-import@^1.0.1, ember-auto-import@^1.2.13:
   version "1.2.13"
   resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-1.2.13.tgz#8f6f5d1c64e173f9093dd0c5031dc1d446b7cff1"
   dependencies:
@@ -5756,7 +5760,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
@@ -5925,6 +5929,13 @@ react-dom@^15.5.4:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     schedule "^0.5.0"
+
+react-star-rating-component@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/react-star-rating-component/-/react-star-rating-component-1.4.1.tgz#74dc1c73493f088013331c234190b8cccad31f6b"
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.6.1"
 
 react@^15.5.4:
   version "15.6.2"
