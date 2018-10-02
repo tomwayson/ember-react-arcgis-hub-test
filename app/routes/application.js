@@ -6,7 +6,7 @@ export default Route.extend({
   beforeModel() {
     /* NOTE: if you lazily load translations, here is also where you would load them via `intl.addTranslations` */
     // quick and dirty code to set the best locale
-    const supportedLocales = ['en-US', 'es'];
+    const supportedLocales = ['en-US', 'en', 'es'];
     const browserLocales = navigator.languages;
     const locales = browserLocales.filter(locale => {
       return supportedLocales.includes(locale);

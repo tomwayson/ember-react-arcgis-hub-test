@@ -1,5 +1,6 @@
 {
   "app": {
-    "welcomeToEmber": "Beinvenidos a Ember"
+    "welcomeToEmber": "Beinvenidos a Ember",
+    "thisIsPassedAsAProp": "esto se pasa como un prop"
   }
 }
