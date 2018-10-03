@@ -9,6 +9,11 @@
       "as24Hr": "as 24hr",
       "numberProp": "Number prop",
       "asCurrency": "as currency"
+    },
+    "HubAuthButtons": {
+      "withFacebook": "Sign in with Facebook",
+      "withGoogle": "Sign in with Google",
+      "withOrganization": "Sign in with Organization"
     }
   }
 }

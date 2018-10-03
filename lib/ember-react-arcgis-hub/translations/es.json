@@ -9,6 +9,11 @@
       "as24Hr": "en 24 hr",
       "numberProp": "Numero prop",
       "asCurrency": "mondeda"
+    },
+    "HubAuthButtons": {
+      "withFacebook": "Iniciar sesión usando Facebook",
+      "withGoogle": "Iniciar sesión usando Google",
+      "withOrganization": "Iniciar sesión usando Organization"
     }
   }
 }

@@ -1,8 +1,7 @@
 <h2 id="title">{{t 'app.welcomeToEmber'}}</h2>
 
-{{say-hi name="Tom"}}
-
-{{rating-test}}
+{{!-- TODO: wrap this in a modal --}}
+{{hub-auth-form intl=intl onSignIn=(action 'signIn') }}
 
 {{intl-test intl=intl text=(t 'app.thisIsPassedAsAProp') }}
 
