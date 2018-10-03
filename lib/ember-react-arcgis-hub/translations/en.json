@@ -1,7 +1,14 @@
 {
   "arcgisHub": {
     "ExampleComponent": {
-      "ExampleComponent": "Example Component:"
+      "i18nExamples": "i18n Examples",
+      "textProp": "Text prop",
+      "dateProp": "Date prop",
+      "asWeekday": "as Weekday",
+      "asTime": "as time",
+      "as24Hr": "as 24hr",
+      "numberProp": "Number prop",
+      "asCurrency": "as currency"
     }
   }
 }
