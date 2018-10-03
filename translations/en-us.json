@@ -1,6 +1,10 @@
 {
   "app": {
     "welcomeToEmber": "Welcome to Ember",
-    "thisIsPassedAsAProp": "this is passed as a prop"
+    "thisIsPassedAsAProp": "this is passed as a prop",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "cancel": "Cancel",
+    "signInWith": "TODO: Sign in with"
   }
 }

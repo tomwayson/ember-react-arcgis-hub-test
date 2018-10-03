@@ -1,3 +1,4 @@
-@import 'variables/_colors';
+@import "ember-bootstrap/bootstrap";
 
+// TODO: configure so we can resolve w/o node_modules
 @import 'node_modules/react-arcgis-hub/dist/HubAuthButtons';

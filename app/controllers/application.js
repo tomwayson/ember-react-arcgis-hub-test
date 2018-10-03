@@ -4,13 +4,16 @@ import { inject as service } from '@ember/service';
 export default Controller.extend({
   intl: service('intl'),
 
+  currentProvider: null,
+  isSignInModalOpen: false,
+
   actions: {
-    /* eslint-disable no-console */
     signIn(provider) {
-      // TODO: close the modal and show the chosen provider
-      // this.set('isSignInModalOpen', false);
-      console.log('TODO: sign in w/', provider || 'AGO');
+      // close the modal and show the chosen provider
+      this.setProperties({
+        currentProvider: provider || 'AGO',
+        isSignInModalOpen: false
+      });
     }
-    /* eslint-enable no-console */
-  }
+   }
 });

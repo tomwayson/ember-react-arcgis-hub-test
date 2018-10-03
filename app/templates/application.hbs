@@ -1,8 +1,25 @@
 <h2 id="title">{{t 'app.welcomeToEmber'}}</h2>
+{{#bs-modal
+  open=isSignInModalOpen
+  onHidden=(action (mut isSignInModalOpen) false)
+  as |modal|}}
+  {{#modal.header}}
+    <h4 class="modal-title">
+      {{t 'app.signIn'}}
+    </h4>
+  {{/modal.header}}
+  {{#modal.body}}
+    <h3>{{t 'app.signIn'}}/{{t 'app.signUp'}}</h3>
+    {{hub-auth-form intl=intl onSignIn=(action 'signIn') }}
+  {{/modal.body}}
+  {{#modal.footer}}
+    {{#bs-button onClick=(action modal.close)}}{{t 'app.cancel'}}{{/bs-button}}
+  {{/modal.footer}}
+{{/bs-modal}}
+{{#bs-button onClick=(action (mut isSignInModalOpen) true)}}{{t 'app.signIn'}}{{/bs-button}}
 
-{{!-- TODO: wrap this in a modal --}}
-{{hub-auth-form intl=intl onSignIn=(action 'signIn') }}
-
-{{intl-test intl=intl text=(t 'app.thisIsPassedAsAProp') }}
+{{#if currentProvider }}
+  <p>{{t 'app.signInWith'}}: <strong>{{currentProvider}}</strong></p>
+{{/if}}
 
 {{outlet}}

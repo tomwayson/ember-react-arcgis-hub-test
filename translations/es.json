@@ -1,6 +1,10 @@
 {
   "app": {
     "welcomeToEmber": "Beinvenidos a Ember",
-    "thisIsPassedAsAProp": "esto se pasa como un prop"
+    "thisIsPassedAsAProp": "esto se pasa como un prop",
+    "signIn": "Registrarse",
+    "signUp": "Regístrate",
+    "cancel": "Cancelar",
+    "signInWith": "TODO: Inicia sesión con"
   }
 }
