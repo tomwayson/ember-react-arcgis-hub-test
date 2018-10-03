@@ -14,6 +14,13 @@ export default Controller.extend({
         currentProvider: provider || 'AGO',
         isSignInModalOpen: false
       });
+    },
+    cancelSignIn() {
+      // close the modal and show the chosen provider
+      this.setProperties({
+        currentProvider: null,
+        isSignInModalOpen: false
+      });
     }
    }
 });

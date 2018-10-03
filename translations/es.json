@@ -5,6 +5,7 @@
     "signIn": "Registrarse",
     "signUp": "Regístrate",
     "cancel": "Cancelar",
-    "signInWith": "TODO: Inicia sesión con"
+    "signInWith": "TODO: Inicia sesión con",
+    "welcomeToReact": "Beinvenidos a React"
   }
 }

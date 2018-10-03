@@ -3,6 +3,13 @@ import { HubAuthButtons } from 'react-arcgis-hub';
 
 export default class HubAuthForm extends React.Component {
   render() {
-    return <HubAuthButtons intl={this.props.intl} onSignIn={this.props.onSignIn} />;
+    const {
+      intl,
+      onSignIn
+    } = this.props;
+    return <div>
+      <h4>{intl.t('app.welcomeToReact')}</h4>
+      <HubAuthButtons intl={intl} onSignIn={onSignIn} />
+    </div>;
   }
 }

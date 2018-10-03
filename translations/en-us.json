@@ -5,6 +5,7 @@
     "signIn": "Sign in",
     "signUp": "Sign up",
     "cancel": "Cancel",
-    "signInWith": "TODO: Sign in with"
+    "signInWith": "TODO: Sign in with",
+    "welcomeToReact": "Welcome to React"
   }
 }
