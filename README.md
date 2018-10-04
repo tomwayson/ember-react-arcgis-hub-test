@@ -31,9 +31,7 @@ This example application uses [ember-cli-sass](https://github.com/aexmachina/emb
 
 First, ember-cli-react describes itself as an "experimental addon" that [the authors are not even using yet in production](https://github.com/AltSchool/ember-cli-react).
 
-Beyond that, there are many constraints you have to follow when authoring the React component library. For example I chose not to bundle any React implementation of interactive Bootstrap components (you know, [the ones that require JavaScript](https://getbootstrap.com/docs/3.3/javascript/)). This means the library components can't contain those Bootstrap components. This works fine for modals, tabs, and collapses because the library component can be just contents that go in the container. It is a significant limitation to not be able to use others like tooltips, drop downs, and button groups in the library though. Speaking of Bootstrap, should the library support v3 as well as v4?
-
-Similarly, I've chosen not to bundle react-intl with the react-arcgis-hub components and instead am expecting the consuming app to pass an `intl` prop to each component. This works because react-intl and ember-intl share underlying libraries and browser primitives and have very similar APIs. However, this means that react-arcgis-hub components cannot use react-intl's convenience components like `<FormattedDate>`, etc and must instead use the functions exposed by `this.props.intl` and/or a [few utility functions](https://github.com/tomwayson/react-arcgis-hub/blob/3571d335b73b8170b12a0669546ee1bf08043492/src/utils/index.ts) that handle a couple of differences in the APIs exposed by ember-intl.
+Beyond that, there are a few [constraints I had to follow when authoring the React component library](https://github.com/tomwayson/react-arcgis-hub/blob/master/README.md#limitations).
 
 ## Prerequisites
 
