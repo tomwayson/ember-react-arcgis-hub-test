@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'ember-cli-react-test',
+    modulePrefix: 'ember-react-arcgis-hub-test',
     environment,
     rootURL: '/',
     locationType: 'auto',

@@ -1,8 +1,8 @@
 {
-  "name": "ember-cli-react-test",
+  "name": "ember-react-arcgis-hub-test",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for ember-cli-react-test goes here",
+  "description": "Small description for ember-react-arcgis-hub-test goes here",
   "license": "MIT",
   "author": "",
   "directories": {

@@ -1,8 +1,6 @@
-# ember-cli-react-test
+# ember-react-arcgis-hub-test
 
-An application to test using React component libraries in ember.js using [ember-cli-react]
-
-Specifically this application tests how to share Bootstrap styles and i18n messages between the  application and React components. I created [react-arcgis-hub](https://github.com/tomwayson/react-arcgis-hub) as a library of React components that are specifically designed to work in both React and Ember applications that use Bootstrap and either [react-intl](https://github.com/yahoo/react-intl) or [ember-intl](https://github.com/ember-intl/ember-intl) respectively. This application verifies that those components work in an Ember application using [ember-bootstrap](https://www.ember-bootstrap.com/).
+This application tests how to share Bootstrap styles and i18n messages between an Ember application and React components. I created [react-arcgis-hub](https://github.com/tomwayson/react-arcgis-hub) as a library of React components that are specifically designed to work in both React and Ember applications that use Bootstrap and either [react-intl](https://github.com/yahoo/react-intl) or [ember-intl] respectively. This application verifies that those components work in an Ember application using [ember-cli-react], [ember-intl], and [ember-bootstrap].
 
 ## How it works
 All I had to do to make the React components available to the Ember app was:
@@ -10,10 +8,11 @@ All I had to do to make the React components available to the Ember app was:
 ```bash
 ember i ember-cli-react
 ember i ember-auto-import
+ember i ember-intl
 yarn add react-arcgis-hub
 ```
 
-Thanks to the magic of [ember-cli-react] and  [ember-auto-import](https://github.com/ef4/ember-auto-import), I was then able to write DDAU-style React components in my app [like this](./app/components/HubAuthForm.jsx) that wrap the react-arcgis-hub components and pass down properties and closure actions:
+Thanks to the magic of   [ember-auto-import](https://github.com/ef4/ember-auto-import) and [ember-cli-react], I was then able to write DDAU-style React components in my app [like this](./app/components/HubAuthForm.jsx) that `import` components from react-arcgis-hub and pass down properties and closure actions:
 
 ```hbs
 {{hub-auth-form intl=intl onSignIn=(action 'signIn') }}
@@ -24,7 +23,7 @@ Thanks to the magic of [ember-cli-react] and  [ember-auto-import](https://github
 Notice how I pass in ember-intl's [intl](https://github.com/ember-intl/ember-intl/blob/2.x/docs/ember-service-api.md) service? The React components use that service to look up translations. Their translations need to be merged with those of the Ember app in order for this to work. Right now this happens via [an in-repo addon that has a copy of  react-arcgis-hub translations](./lib/ember-react-arcgis-hub/ttranslations). However there are still some kinks to be worked out. [react-intl only supports a flat structure for message JSON files](https://github.com/yahoo/react-intl/issues/207#issuecomment-154176858), but ember-intl's can be nested or even YAML. Maybe this can be automated using the [new treeForTranslations() hook in ember-intl 3.0](https://github.com/ember-intl/ember-intl/blob/master/docs/addon-support.md#advanced-usage-treefortranslations).
 
 #### Styles
-This example application uses [ember-cli-sass](https://github.com/aexmachina/ember-cli-sass) to [import and compile the .scss files that are distributed with react-arcgis-hub](./app/styles/app.scss). This allows the application to overwirte component styles by setting variables. Alternatively the application could have used the [compiled CSS that react-arcgis-hub distributes](https://unpkg.com/react-arcgis-hub@0.0.1/dist/css/).
+This example application uses [ember-cli-sass](https://github.com/aexmachina/ember-cli-sass) to [import and compile the .scss files that are distributed with react-arcgis-hub](./app/styles/app.scss) along with the Bootstrap sass files provided by [ember-bootstrap]. This allows the application to overwrite component styles by setting variables. Alternatively the application could have used the [compiled CSS that react-arcgis-hub distributes](https://unpkg.com/react-arcgis-hub@0.0.1/dist/css/) along with Bootstrap's own pre-compiled CSS.
 
 ### Limitations
 
@@ -47,7 +46,7 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd ember-cli-react-test`
+* `cd ember-react-arcgis-hub-test`
 * `yarn install`
 
 ## Running / Development
@@ -83,3 +82,5 @@ Specify what it takes to deploy your app.
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
 [ember-cli-react]:https://github.com/AltSchool/ember-cli-react
+[ember-bootstrap]:https://www.ember-bootstrap.com/
+[ember-intl]:https://github.com/ember-intl/ember-intl
