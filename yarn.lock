@@ -6764,6 +6764,10 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-arcgis-hub@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-arcgis-hub/-/react-arcgis-hub-0.0.1.tgz#7e864a0d07fc283bbec7a782f775777a63f16f84"
+
 react-dom@^15.5.4:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.2.tgz#41cfadf693b757faf2708443a1d1fd5a02bef730"
