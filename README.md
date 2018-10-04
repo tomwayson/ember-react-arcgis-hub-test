@@ -2,6 +2,8 @@
 
 This application tests how to share Bootstrap styles and i18n messages between an Ember application and React components. I created [react-arcgis-hub](https://github.com/tomwayson/react-arcgis-hub) as a library of React components that are specifically designed to work in both React and Ember applications that use Bootstrap and either [react-intl](https://github.com/yahoo/react-intl) or [ember-intl] respectively. This application verifies that those components work in an Ember application using [ember-cli-react], [ember-intl], and [ember-bootstrap].
 
+![image](https://user-images.githubusercontent.com/662944/46497113-80080600-c7ce-11e8-8f95-8dc4f102709c.png)
+
 ## How it works
 All I had to do to make the React components available to the Ember app was:
 
